@@ -4,7 +4,14 @@ class Book
     private string author;
     private int yearPublished;
 
-    void DisplayInfo()
+    public Book(string title, string author, int yearPublished)
+    {
+        this.title = title;
+        this.author = author;
+        this.yearPublished = yearPublished;
+    }
+
+    public void DisplayInfo()
     {
         Console.WriteLine("Title: " + this.title);
         Console.WriteLine("Author: " + this.author);
