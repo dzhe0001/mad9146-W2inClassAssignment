@@ -18,4 +18,9 @@ class Student
             }
         }
     }
+
+    public bool IsPassing()
+    {
+        return this.grade >= 50;
+    }
 }
