@@ -13,5 +13,21 @@ class Program
         engine1.HorsePower = 450;
         car1.Engine = engine1;
         car1.Describe();
+        
+        Console.WriteLine(CountVowels("Hello World"));
+        Console.WriteLine(CountVowels("Apples ARE awesome"));
+    }
+    
+    static int CountVowels(string input)
+    {
+        int count = 0;
+        
+        foreach (char c in input.ToLower())
+        {
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
+                count++;
+        }
+        
+        return count;
     }
 }
